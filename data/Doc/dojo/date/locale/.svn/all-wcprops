@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/dojo_doc_wiki/!svn/ver/90/_source-moin/dojo/date/locale
+END
+format.rst
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/dojo_doc_wiki/!svn/ver/90/_source-moin/dojo/date/locale/format.rst
+END
+parse.rst
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/dojo_doc_wiki/!svn/ver/45/_source-moin/dojo/date/locale/parse.rst
+END
+regexp.rst
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/dojo_doc_wiki/!svn/ver/45/_source-moin/dojo/date/locale/regexp.rst
+END
+isWeekend.rst
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/dojo_doc_wiki/!svn/ver/45/_source-moin/dojo/date/locale/isWeekend.rst
+END
+addCustomFormats.rst
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/dojo_doc_wiki/!svn/ver/45/_source-moin/dojo/date/locale/addCustomFormats.rst
+END
+getNames.rst
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/dojo_doc_wiki/!svn/ver/45/_source-moin/dojo/date/locale/getNames.rst
+END
