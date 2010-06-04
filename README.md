@@ -1,11 +1,15 @@
-This is an example Wiki built with Persevere 2.0. It is recommended that you 
-use [Nodules](http://github.com/kriszyp/nodules) on Node to run this example so that
-all dependencies will be automatically resolved, or you can also use the nightly 
-build that bundles with Narwhal. Once installed, you can download this package and from
-the root folder simply run:
+This is a small wiki test using http://github.com/kriszyp/pintura for handling REST requests and ReST documents on the file system for source documents.
 
-    node /path/to/nodules.js
-    
-or for Narwhal:
+Quick Start:
 
-    jackup
+        - Download the latest nightly build of persevereJSGI from http://www.persvr.org/nightly/
+        - Checkout a copy of this project.
+        - expand the nightly build of persevere, and cd to its narwhal/ directory
+        - run './bin/sea'
+        - cd to wherevere you put ReSTREST
+        - run './bin/sea' (in the ReSTREST directory this time)
+        - run 'jackup' to start the webserver, which will be running on port 8080 by default
+
+You should now be able to access files the ReST files (the dojotoolkit rst docs are in there at the moment) by hitting a url like /Doc/djConfig .  The file will be read from ReSTREST/data/Doc/djConfig.rst .
+
+
