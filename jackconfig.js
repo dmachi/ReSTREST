@@ -1,7 +1,6 @@
 /**
  * The starting point for Pintura running as a Jack app.
  */
-
 try{
 	var pintura = require("pintura/pintura");
 }catch(e){
@@ -9,8 +8,6 @@ try{
 	require("./lib/util/narwhal-compat");
 	pintura = require("pintura/pintura");
 }
-
-
 
 var File = require("file"),
 	transporter = require("pintura/jsgi/transporter");
@@ -34,8 +31,13 @@ exports.app =
 	);
 
 
-var perseverePath = require("packages").resource("public/explorer.html").toString();
-perseverePath = perseverePath.substring(0, perseverePath.length - "/explorer.html".length).replace(/\\/,'/');
+var perseverePath;
+require.paths.forEach(function(path){
+	var path = path.match(/(.*)\/persevere\/lib$/);
+	if(path){
+		perseverePath = path[1] + "/persevere/public";
+	}
+});
 // now setup the development environment, handle static files before reloading the app
 // for better performance
 exports.development = function(app, options){
