@@ -1,0 +1,219 @@
+/**
+ * Page specific styling
+ */
+.go {
+    margin-top: 17px;
+}
+
+.headerLink {
+	font-size:10px;
+	padding-left:1em;
+}
+
+.navTab {
+	list-style: none;
+	margin: 0;
+	padding: 4px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 20px;
+}
+
+.navTab li {
+	display: inline;
+	border: 1px solid #ccc;
+	padding: 5px 10px;
+	background: #e3e3e3;
+	color: #333;
+	cursor: pointer;
+}
+
+.navTab li.active {
+	background: white;
+	border-bottom: 1px solid white;
+	text-decoration: underline;
+}
+
+.downloadPage .downloadInfo {
+	list-style: none;
+}
+
+.downloadPage .downloadInfo hr {
+	margin-bottom: 15px;
+}
+
+.downloadInfo li strong {
+	font-size:13px;
+	font-weight:bold;
+	color:#333;
+}
+
+.downloadPage .help {
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin: 10px 10px 30px 0px;
+	background:#F5FFFE;
+}
+
+.downloadPage .info {
+	padding: 0px;
+	margin: 15px 0px;
+}
+
+.downloadPage .help img {
+	float: left;
+	margin: 5px 8px 5px 0;
+}
+
+.downloadPage .help p {
+	margin-bottom: 0;
+}
+
+.downloadPage img {
+	vertical-align: middle;
+}
+
+.downloadPage div.group {
+	clear: left;
+}
+
+.downloadPage div.group h1 {
+	margin: 0 0 5px 0 !important; /* <- NEED TO GET RID OF THE IMPORTANT!!!!! */
+}
+
+.downloadPage hr {
+	height: 1px;
+	width: 100%;
+	margin: 3px 0;
+	clear: left;
+}
+
+.downloadPage div.group .checkbox {
+	float: left;
+	width: 30%;
+	clear: both;
+	margin-top: 10px;
+}
+
+.downloadPage div.group .content {
+	float: left;
+	width: 70%;
+	margin-top: 10px;
+}
+
+.downloadPage .depHeader {
+	float: right;
+	font-size: 80%;
+}
+
+.downloadPage .depFooter {
+	float: right;
+	clear: left;
+	font-size: 80%;
+	margin-top: 8px;
+}
+
+.downloadPage .depWarning {
+    vertical-align: middle;
+}
+
+.dijitTooltip {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.dijitTooltipContainer {
+    background: #EEFFCC !important;
+    border: 1px solid #AACC99 !important;
+}
+
+.dijitTooltipConnector {
+    background: none !important;
+}
+
+#nabbleforum {
+	margin-top:25px;
+}
+
+#nabbleforum .medium-border-color {
+	border:0 !important;
+}
+
+
+.homeIntro .browsers {
+	position:absolute;
+	right:-170px;
+	bottom:-25px;
+}
+
+
+
+
+#resultbox {
+	border: 3px solid #999;
+	background:#fff;
+	padding:15px;
+	width:420px;
+	margin-top:5px;
+	margin-bottom:10px;
+	color:#000;
+	position:absolute;
+	right:0;
+	z-index:20;
+	-webkit-box-shadow:0 0 10px #333;
+	-moz-box-shadow:0 0 10px #333;
+	outline:none;
+}
+ 
+#googlesearch, #sitesearch {
+	margin-left:20px;
+}
+
+#header form span.gs-spacer {
+	background:none;
+	display:inline;
+	width:auto;
+	height:auto;
+}
+
+.googleheader {
+	margin:5px 0;
+	font-weight:bold;
+} 
+ 
+/* Google Style Hacks */
+.gsc-search-box, .gsc-configLabelCell {
+	display:none;
+}
+.gsc-control {
+	width:100%;
+}
+ 
+.gsc-tabHeader {
+	display:none;
+
+} 
+
+/* Link Colour */
+#resultbox a, .gs-title, .gs-title b {
+	font-size:13px;
+	font-weight:bold;
+	color:#2253AA !important;
+}
+.gs-visibleUrl, .gs-visibleUrl-short {
+	color:#666 !important;
+}
+
+#searchClose {
+	text-align:right;
+}
+
+#searchClose a {
+	font-size:10px !important;
+	color:#cc0000;
+	cursor:pointer;
+}
+
+
+#resultbox_underlay {
+	opacity:0;
+}

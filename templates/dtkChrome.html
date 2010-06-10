@@ -1,8 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 	<head>
-		<title>Dojo Documentation</title>
+		{%include config%}
+		<title>{{id}}</title>
+		{%include meta%}
 	</head>
-	<body>
-		{{require("markdown").toHTML(content)}}
+	<body class="claro">
+		<div id="page" class="docPage">
+			{%include header%}
+			<div id="main">
+				<div id="content" class="innerBox">
+					<div class="pageTitleContainer">
+						<h1>Documentation</h1>
+						<ul class="subnav">
+							<li><a href="/quickstart/"><span>Quick Start Guide</span></a></li>
+							<li class="active"><a href="/reference-guide/"><span>Reference Guide</span></a></li>
+							<li><a href="/api/"><span>API Documentation</span></a></li>
+						</ul>
+					</div>
+					<div class="line">
+						<div class="unit size3of4 firstUnit">
+							<div class="spacer">	
+								{{require("markdown").toHTML(content)}}
+							</div>
+						</div>
+						<div class="sidebar unit size1of4 lastUnit">
+							<h4>Documentation</h4>
+							<ul>
+								<li><a href="#">Startpage</a></li>
+								<li><a href="dojo/indexhtml">Dojo</a></li>
+								<li><a href="dijit/index.html">Dijit</a></li>
+								<li><a href="dojox/index.html">Dojox</a></li>
+								<li><a href="quickstart/index.html">Quickstart guides</a></li>
+							</ul>
+							<div class="sphinxsidebar">
+							        <div class="sphinxsidebarwrapper">
+									<h3><a href="contents.html">Table Of Contents</a></h3>
+									<ul>
+										<li><a class="reference external" href="#">Dojo Toolkit Reference Guide</a>
+											<ul>
+												<li><a class="reference external" href="#dojo">Dojo</a></li>
+												<li><a class="reference external" href="#dijit">Dijit</a></li>
+												<li><a class="reference external" href="#dojox">DojoX</a></li>
+												<li><a class="reference external" href="#dojoc">DojoC</a></li>
+												<li><a class="reference external" href="#dojo-styleguides">Dojo Styleguides</a></li>
+												<li><a class="reference external" href="#utilities-and-miscellaneous">Utilities and Miscellaneous</a>
+													<ul>
+														<li><a class="reference external" href="#dojo-build-system"><tt class="docutils literal"><span class="pre">Dojo</span> <span class="pre">Build</span> <span class="pre">System</span></tt></a></li>
+														<li><a class="reference external" href="#the-dojo-api-doc-system"><tt class="docutils literal"><span class="pre">The</span> <span class="pre">Dojo</span> <span class="pre">API</span> <span class="pre">Doc</span> <span class="pre">System</span></tt></a></li>
+														<li><a class="reference external" href="#shrinksafe"><tt class="docutils literal"><span class="pre">ShrinkSafe</span></tt></a></li>
+														<li><a class="reference external" href="#checkstyle"><tt class="docutils literal"><span class="pre">Checkstyle</span></tt></a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+	
+									<div id="searchbox" style="display: none">
+										<h3>Quick search</h3>
+										<form class="search" action="search.html" method="get">
+											<input type="text" name="q" size="18" />
+											<input type="submit" value="Go" />
+											<input type="hidden" name="check_keywords" value="yes" />
+											<input type="hidden" name="area" value="default" />
+										</form>
+										<p class="searchtip" style="font-size: 90%">
+											Enter search terms or a module, class or function name.
+										</p>
+									</div>
+									<script type="text/javascript">$('#searchbox').show(0);</script>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="hide" />
+			<script type="text/javascript">
+				document.body.className = "nihilo";
+				var CodeGlassConfig = {
+					dataUrl:"_static/dojo"
+				};
+			</script>
+		</div>
+		{%include footer%}
+		<div class="clearer"></div>
+		</div>
 	</body>
 </html>
