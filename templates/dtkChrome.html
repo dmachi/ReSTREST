@@ -20,8 +20,13 @@
 					</div>
 					<div class="line">
 						<div class="unit size3of4 firstUnit">
-							<div class="spacer">	
-								{{require("markdown").toHTML(content)}}
+							<div id="rstContent" class="spacer">	
+								{%if $data.content%}
+									{{require("markdown").toHTML(content)}}
+								{%/if%}
+								{%else%}
+									This document does not yet exist.  Click <a href="#edit" onclick='util.docEditor.editDoc();return false;'>here</a> to create one.
+								{%/else%}
 							</div>
 						</div>
 						<div class="sidebar unit size1of4 lastUnit">
@@ -68,7 +73,6 @@
 											Enter search terms or a module, class or function name.
 										</p>
 									</div>
-									<script type="text/javascript">$('#searchbox').show(0);</script>
 								</div>
 							</div>
 						</div>
@@ -77,14 +81,18 @@
 			</div>
 			<hr class="hide" />
 			<script type="text/javascript">
-				document.body.className = "nihilo";
-				var CodeGlassConfig = {
-					dataUrl:"_static/dojo"
-				};
+				//document.body.className = "nihilo";
+				//var CodeGlassConfig = {
+				//	dataUrl:"_static/dojo"
+				//};
 			</script>
 		</div>
+
 		{%include footer%}
+
 		<div class="clearer"></div>
 		</div>
+
+		{%include dojo%}
 	</body>
 </html>
