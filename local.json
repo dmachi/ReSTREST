@@ -12,5 +12,11 @@
 	},
 	"bypassSecurity": true,
 	"admins":["admin"],
-	"dataFolder": "data"
+	"dataFolder": "data",
+	"cacheFolder": "cache",
+	"cache": {
+		"seconds": 120,
+		"anonymousOnly": true,
+		"alwaysVaryOn": ["accept"]
+	}
 }
