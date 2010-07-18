@@ -10,21 +10,21 @@ try{
 }
 
 var File = require("file"),
-	transporter = require("pintura/jsgi/transporter");
-
+	transporter = require("transporter/jsgi/transporter");
 require("app");
 
 // setup the Jack application
 exports.app =
 	// this will provide module wrapping for the server side CommonJS libraries for the client
 	transporter.Transporter({loader: function(id){
-		if(id.match(/-engine/)){
-			id = "../engines/default/lib/" + id;
+		if(id.match(/promised-io/)){
+			id = id.replace(/promised-io\/http-client/,'http-client');
+
 		}
 		return require.loader.loader.fetch(require.loader.resolvePkg(id.substring(0, id.length - 3),"","","")[0]);
 	}}, 
 		// make the root url redirect to /Page/Root  
-		require("pintura/jsgi/redirect-root").RedirectRoot(
+		require("jsgi/redirect-root").RedirectRoot(
 		 	// main Pintura handler 
 			pintura.app
 		)
@@ -32,12 +32,11 @@ exports.app =
 
 
 var perseverePath;
-require.paths.forEach(function(path){
-	var path = path.match(/(.*)\/persevere\/lib$/);
-	if(path){
-		perseverePath = path[1] + "/persevere/public";
-	}
-});
+ var path = require.paths[0].match(/(.*?)\/packages\//);
+ if(path){
+ 	perseverePath = path[1] + "/packages/persevere/public";
+ }
+
 // now setup the development environment, handle static files before reloading the app
 // for better performance
 exports.development = function(app, options){
@@ -58,6 +57,8 @@ exports.development = function(app, options){
 								exports.app
 	]);
 };
+
+require("tunguska/jack-connector").observe("worker", pintura.app.addConnection);
 
 // we start the REPL (the interactive JS console) because it is really helpful
 new (require("worker").SharedWorker)("narwhal/repl");

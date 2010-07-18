@@ -15,6 +15,7 @@
 		"^model$": "jar:http://github.com/kriszyp/perstore/zipball/master!/lib/model",
 		"^facet$": "jar:http://github.com/kriszyp/perstore/zipball/master!/lib/facet",
 		"^media$": "jar:http://github.com/kriszyp/pintura/zipball/master!/lib/media",
-		"^json$": "jar:http://github.com/kriszyp/narwhal/zipball/master!/engines/default/lib/json"
+		"^json$": "jar:http://github.com/kriszyp/narwhal/zipball/master!/engines/default/lib/json",
+		"lazy-array": "jar:http://github.com/kriszyp/commonjs-utils/zipball/master!/lib/lazy-array.js"
 	}
 }
