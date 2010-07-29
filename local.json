@@ -18,5 +18,12 @@
 		"seconds": 120,
 		"anonymousOnly": true,
 		"alwaysVaryOn": ["accept"]
-	}
+	},
+        "security":{
+                "//": "Bypass security for initial setup",
+                "bypass": true,
+                "//": "List of admins",
+                "admins":["admin"]
+        },
+
 }
