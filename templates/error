@@ -1,0 +1,6 @@
+<html>
+	<body>
+		<h1>Generic Error Template</h1>
+		<h2>Error Code: <strong>{{status}}</strong></h2>
+	</body>
+</html>

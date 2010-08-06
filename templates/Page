@@ -21,8 +21,8 @@
 					<div class="line">
 						<div class="unit size3of4 firstUnit">
 							<div id="rstContent" class="spacer">	
-								{%if $data.content%}
-									{{content}}
+								{%if $data.toHTML%}
+									{{toHTML()}}
 								{%/if%}
 								{%else%}
 									This document does not yet exist.  Click <a href="#edit" onclick='util.docEditor.editDoc();return false;'>here</a> to create one.
