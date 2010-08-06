@@ -22,7 +22,7 @@
 						<div class="unit size3of4 firstUnit">
 							<div id="rstContent" class="spacer">	
 								{%if $data.toHTML%}
-									{{toHTML()}}
+									{{$data.toHTML()}}
 								{%/if%}
 								{%else%}
 									This document does not yet exist.  Click <a href="#edit" onclick='util.docEditor.editDoc();return false;'>here</a> to create one.
