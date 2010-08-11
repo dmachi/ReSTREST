@@ -21,12 +21,12 @@
 					<div class="line">
 						<div class="unit size3of4 firstUnit">
 							<div id="rstContent" class="spacer">	
-								{%if $data.toHTML%}
-									{{$data.toHTML()}}
-								{%/if%}
-								{%else%}
-									This document does not yet exist.  Click <a href="#edit" onclick='util.docEditor.editDoc();return false;'>here</a> to create one.
-								{%/else%}
+								{%if $data.content%}
+                                                                       {{content}}
+                                                              	{%/if%}
+                                                               	{%else%}
+                                                                       This document does not yet exist.  Click <
+                                                               	{%/else%}
 							</div>
 						</div>
 						<div class="sidebar unit size1of4 lastUnit">
