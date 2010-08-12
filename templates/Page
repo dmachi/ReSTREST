@@ -1,13 +1,13 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 	<head>
-		{%include config%}
+		{%include config.html%}
 		<title>{{id}}</title>
-		{%include meta%}
+		{%include meta.html%}
 	</head>
 	<body class="claro">
 		<div id="page" class="docPage">
-			{%include header%}
+			{%include header.html%}
 			<div id="main">
 				<div id="content" class="innerBox">
 					<div class="pageTitleContainer">
@@ -88,11 +88,11 @@
 			</script>
 		</div>
 
-		{%include footer%}
+		{%include footer.html%}
 
 		<div class="clearer"></div>
 		</div>
 
-		{%include dojo%}
+		{%include dojo.html%}
 	</body>
 </html>
